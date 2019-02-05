@@ -8,9 +8,12 @@ $sql = "SELECT * FROM local";
 
 $stmt = $bdd->query($sql);
 
-foreach($stmt as $row){
-    var_dump($row);
-}
+$liste_locaux = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+//affichage des données
+var_dump($liste_locaux);
+
+
 $bdd = null;
 
 ?>

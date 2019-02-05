@@ -10,10 +10,11 @@ $sql = "SELECT * FROM moniteur";
 //exécution de la requête (appel de la méthode query sur l'objet $bdd)
 $stmt = $bdd->query($sql);
 
+$liste_moniteurs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 //affichage des données
-foreach($stmt as $row){
-    var_dump($row);
-}
+var_dump($liste_moniteurs);
+
 
 //destruction de l'objet de connexion (libération de la mémoire)
 $bdd = null;
