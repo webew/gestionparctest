@@ -1,0 +1,30 @@
+html{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: black;
+    
+}
+nav ul li{
+    list-style-type: none;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: red;
+}
